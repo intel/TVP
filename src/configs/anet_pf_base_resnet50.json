@@ -1,0 +1,53 @@
+{
+  "train_datasets": [
+    {
+      "name": "anet",
+      "txt": "data/txt_db/anet_retrieval/train.jsonl",
+      "img": "data/vis_db/anet/"
+    }
+  ],
+  "val_datasets": [
+    {
+      "name": "anet_retrieval",
+      "txt": "data/txt_db/anet_retrieval/dev.jsonl",
+      "img": "data/vis_db/anet/"
+    }
+  ],
+  "max_txt_len": 100,
+  "max_img_size": 448,
+  "img_pixel_mean": [123.675, 116.28, 103.53],
+  "img_pixel_std": [1.0, 1.0, 1.0],
+  "img_input_format": "BGR",
+  "fps": 3,
+  "num_frm": 64,
+  "train_n_clips": 1,
+  "score_agg_func": "lse",
+  "max_n_example_per_group": 1,
+  "model_config": "src/configs/base_model.json",
+  "detectron2_model_cfg": "src/configs/detectron2_configs/R-50-grid.yaml",
+  "e2e_weights_path": "data/pretrained/clipbert_image_text_pretrained.pt",
+  "detectron2_weights_path": null,
+  "bert_weights_path": null,
+  "tokenizer_dir": "data/pretrained/bert-base-uncased/",
+  "output_dir": "model/TG_V0",
+  "train_batch_size": 6,
+  "val_batch_size": 5,
+  "gradient_accumulation_steps": 1,
+  "num_train_epochs": 15,
+  "min_valid_steps": 100,
+  "num_valid": 117,
+  "learning_rate": 5e-6,
+  "weight_decay": 1e-3,
+  "decay": "linear",
+  "optim": "adamw",
+  "betas": [0.9, 0.98],
+  "dropout": 0.1,
+  "grad_norm": 5.0,
+  "cnn_learning_rate": 5e-6,
+  "cnn_weight_decay": 1e-3,
+  "cnn_lr_decay": "linear",
+  "seed":42,
+  "fp16": 1,
+  "loss_type": "ce",
+  "itm_neg_size": 1
+}

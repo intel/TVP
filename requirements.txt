@@ -1,0 +1,14 @@
+# TVP requirements
+# Usage: pip install -r requirements.txt
+horovod
+opencv-python
+matplotlib
+transformers
+tqdm
+lmdb
+fvcore
+av
+cytoolz
+ffmpeg-python
+lmdb
+ipdb

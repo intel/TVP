@@ -1,0 +1,63 @@
+{
+  "train_datasets": [
+    {
+      "name": "anet",
+      "txt": "data/txt_db/charades/charades_sta_train.jsonl",
+      "img": "data/vis_db/charades/"
+    }
+  ],
+  "val_datasets": [
+    {
+      "name": "anet_retrieval",
+      "txt": "data/txt_db/charades/charades_sta_test.jsonl",
+      "img": "data/vis_db/charades/"
+    }
+  ],
+  "max_txt_len": 100,
+  "max_img_size": 448,
+  "img_pixel_mean": [8.2381, 7.3115, 6.6981],
+  "img_pixel_std": [9.6335, 9.0659, 8.7213],
+  "img_input_format": "BGR",
+  "fps": 3,
+  "num_frm": 48,
+  "train_n_clips": 1,
+  "score_agg_func": "lse",
+  "max_n_example_per_group": 1,
+  "model_config": "src/configs/base_model.json",
+  "detectron2_model_cfg": "src/configs/detectron2_configs/R-50-grid.yaml",
+  "e2e_weights_path": "data/pretrained/clipbert_image_text_pretrained.pt",
+  "detectron2_weights_path": null,
+  "bert_weights_path": null,
+  "tokenizer_dir": "data/pretrained/bert-base-uncased/",
+  "output_dir": "model/TG_V0",
+  "train_batch_size": 6,
+  "val_batch_size": 10,
+  "gradient_accumulation_steps": 1,
+  "num_train_epochs": 12,
+  "min_valid_steps": 100,
+  "num_valid": 999,
+  "learning_rate": 5e-6,
+  "weight_decay": 1e-3,
+  "decay": "linear",
+  "step_decay_epochs": [4,8,11],
+  "optim": "adamw",
+  "betas": [0.9, 0.98],
+  "dropout": 0.1,
+  "grad_norm": 5.0,
+  "cnn_learning_rate": 1e-7,
+  "cnn_weight_decay": 1e-3,
+  "cnn_lr_decay": "linear",
+  "cnn_step_decay_epochs": [4,8,11],
+  "tp_learning_rate": 1e-1,
+  "tp_weight_decay": 1e-3,
+  "tp_lr_decay": "multi_step",
+  "tp_step_decay_epochs": [4,8,11],
+  "txtp_learning_rate": 1e-1,
+  "txtp_weight_decay": 1e-3,
+  "txtp_lr_decay": "multi_step",
+  "txtp_step_decay_epochs": [4,8,11],
+  "seed":42,
+  "fp16": 1,
+  "loss_type": "ce",
+  "itm_neg_size": 1
+}
