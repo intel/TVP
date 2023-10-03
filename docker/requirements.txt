@@ -6,7 +6,7 @@ lmdb==0.97
 msgpack-numpy
 msgpack
 toolz
-transformers==2.11.0
+transformers==4.30.0
 tensorboard
 ffmpeg-python
 tqdm
