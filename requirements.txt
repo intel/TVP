@@ -3,12 +3,11 @@
 horovod
 opencv-python
 matplotlib
-transformers
+transformers>=4.30
 tqdm
-lmdb
+lmdb>=1.4
 fvcore
 av
 cytoolz
 ffmpeg-python
-lmdb
 ipdb
