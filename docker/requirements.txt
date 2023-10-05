@@ -2,11 +2,11 @@ ipdb
 joblib
 cytoolz
 lz4==2.1.9
-lmdb==0.97
+lmdb>=1.4
 msgpack-numpy
 msgpack
 toolz
-transformers==2.11.0
+transformers>=4.30
 tensorboard
 ffmpeg-python
 tqdm
