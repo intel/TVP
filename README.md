@@ -142,6 +142,6 @@ If you find our work useful, please cite:
 }
 ```
 ### Acknowledgement
-We develop our code based on ClipBERT codebase.
+We develop our code based on [ClipBERT codebase](https://github.com/jayleicn/ClipBERT).
 
 
