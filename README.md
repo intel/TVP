@@ -1,3 +1,9 @@
+# PROJECT NOT UNDER ACTIVE MANAGEMENT #  
+This project will no longer be maintained by Intel.  
+Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.  
+Intel no longer accepts patches to this project.  
+ If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.  
+  
 ## *T*ext-*V*isual *P*rompting (TVP) Project 
 ### Description
 Text-Visual Prompting (TVP) for Efficient 2D Temporal Video Grounding (TVG) is a novel idea in Efficient AI. Unlike most of state-of-the-art (SOTA) methods that used 3D visual features, we boost our models which inputs are 2D visual features with visual-text joint prompting, and have achieved the comparable accuracy to models utilizing 3D features.
